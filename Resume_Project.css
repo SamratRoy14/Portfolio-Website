@@ -1,0 +1,605 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+/* Body Header */
+
+#body-header {
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+}
+
+/* Horizontal Lists */
+
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hamburger-icon {
+    visibility: hidden;
+}
+.dropdown-content {
+    position: relative;
+    left: 4%;
+    margin-top: -78px;
+    transform: scale(0.6);
+    text-align: right;
+}
+
+.dropdown-list {
+    list-style: none;
+    visibility: hidden;
+}
+
+.dropdown-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Name and Social Icons*/
+
+#name-social-container {
+    margin-top: -19vh;
+}
+
+#my-name {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.9rem;
+}
+
+
+.social-icons li a i {
+    /*color: red;*/
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+/*About Section*/
+
+#about {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#my-image {
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+
+#my-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px lightgrey;
+}
+
+
+#about-para {
+    padding: 10px;
+    width: 70%;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-size: 1.1rem;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+}
+
+/* Skills Section */
+
+/* Wrapping related part to skill section */
+#skill-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 63px;
+}
+
+/* Css Related Part to Skill section */
+section:nth-child(2n) {
+    background-color: lightgray;
+}
+
+.heading {
+    color: #2857a4;
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 73px;
+    margin-top: -34px;
+}
+
+.skill-display {
+    height: 35px;
+    width: 250px;
+    background-color: lightgrey;
+    border-radius: 17px;
+    margin: 25px;
+    box-shadow: inset 0px 2px 2px grey;
+}
+
+.eighty-percent {
+    height: inherit;
+    width: 80%;
+    box-shadow: 4px 0px 4px grey;
+}
+
+.border-rad {
+    border-bottom-left-radius: 17px;
+    border-top-left-radius: 17px;
+}
+
+.blue-background {
+    background-color: #2857a4;
+}
+
+.skill-name {
+    color: white;
+    font-size: 18px;
+    margin-left: 9px;
+    padding-top: 9px;
+}
+
+.red-background {
+    background-color: red;
+}
+
+.seventy-percent {
+    height: inherit;
+    width: 70%;
+    box-shadow: 4px 0px 4px grey;
+}
+
+.purple-background {
+    background-color: mediumpurple;
+}
+
+.sixty-percent {
+    height: inherit;
+    width: 60%;
+    box-shadow: 4px 0px 4px grey;
+}
+
+.green-background {
+    background-color: green;
+}
+
+.fifty-percent {
+    height: inherit;
+    width: 50%;
+    box-shadow: 4px 0px 4px grey;
+}
+
+/* Portfolio section */
+
+/* Wrapping related part to Portfolio section */
+#portfolio-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+/* CSS related part to Portfolio section */
+#portfolio-images .image-css {
+    position: relative;
+}
+
+.image-css,
+#portfolio-images img {
+    height: 269px;
+    width: 363px;
+    margin: 1px;
+}
+
+.image-css:hover {
+    background-color: lightgrey;
+    box-shadow: -3px 1px 28px 1px rgb(87 182 230 / 72%);
+}
+
+.portfolio-details {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    display: flex;
+    text-align: center;
+    padding: 2px;
+}
+
+.image-css:hover .portfolio-details {
+    background-color: #80808078;
+    color: white;
+}
+
+/* Contact Section */
+#contact {
+    background: linear-gradient(to right, #2857a4, #403066);
+    margin-top: 100px;
+}
+
+#heading {
+    color: white;
+}
+
+#main-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+#forms {
+    position: relative;
+    width: 40%;
+    left: 12%;
+}
+
+.design {
+    position: relative;
+    margin-bottom: 10px;
+    width: 35vw;
+    display: block;
+    background-color: transparent;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom: 3px solid white;
+    margin-bottom: 40px;
+}
+
+input[type="submit"] {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    height: 8vh;
+    width: 17vw;
+    font-weight: bold;
+    position: relative;
+    left: 23%;
+}
+
+#get-in-touch {
+    position: relative;
+    color: white;
+    font-size: 15px;
+    width: 40%;
+    left: 12%;
+    margin-top: -17px;
+    margin-bottom: 66px;
+}
+
+#get-in-touch>span {
+    display: block;
+    margin-bottom: 19px;
+}
+
+#get-in-touch p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#footer-icons li {
+    margin-left: 20px;
+}
+
+
+/* Experience section */
+.experience-container {
+    width: 62vw;
+    height: 132vh;
+    position: relative;
+    left: 20%;
+    padding-bottom: 23px;
+    min-width: 50vw;
+}
+
+.experience-details:nth-child(2n+1) {
+    position: relative;
+    left: 5%;
+}
+
+.experience-details:nth-child(2n) {
+    position: relative;
+    left: 53%;
+}
+
+.experience-details {
+    width: 23vw;
+    height: 29vh;
+    margin: 19px;
+    padding: 4px;
+}
+
+.timeline-divider {
+    border: 2px dashed #45c5e2d2;
+    height: 73%;
+    width: 0;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+}
+
+.timeline-icon {
+    position: sticky;
+    top: 10%;
+    transform: rotate(90deg);
+    color: rgb(74, 91, 215);
+    z-index: 2;
+}
+
+.experience-details:nth-child(2n+1)::after {
+    content: '';
+    width: 0.9rem;
+    height: 0.9rem;
+    background-color: grey;
+    border-radius: 50%;
+    position: absolute;
+    top: 37%;
+    left: 111%;
+    z-index: 1;
+}
+
+.experience-details:nth-child(2n)::after {
+    content: '';
+    width: 0.9rem;
+    height: 0.9rem;
+    background-color: grey;
+    border-radius: 50%;
+    position: absolute;
+    top: 38%;
+    right: 111%;
+    z-index: 1;
+}
+
+.exp-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.work-description {
+    text-align: justify;
+    font-size: 30%;
+    font-size: 11px;
+    line-height: 18px;
+    font-family: sans-serif;
+    margin-top: -69px;
+    overflow-wrap: break-word;
+}
+
+.exp-logo>img {
+    width: 24%;
+}
+
+.work-names {
+    text-align: end;
+    position: relative;
+    left: 12.5vw;
+    top: -11vh;
+}
+
+.designation {
+    font-size: 1.2rem;
+    color: blue;
+    margin-bottom: -15px;
+}
+
+.company-name {
+    font-size: 53%;
+    color: orange;
+    font-weight: 100;
+}
+
+.work-dates {
+    font-size: 39%;
+    font-weight: 100;
+    margin-top: -21px;
+}
+
+/* When the screen is lesser than equal to 768px */
+@media screen and (max-width:768px) {
+    .timeline-divider {
+        top: -4%;
+        left: 5%;
+        height: 74%;
+    }
+
+    .experience-details:nth-child(2n+1)::after {
+        left: -13%;
+        top: -19%;
+    }
+
+    .experience-details:nth-child(2n)::after {
+        top: -19%;
+        right: 105%;
+    }
+
+    .experience-details:nth-child(2n+1) {
+        position: relative;
+        left: 5%;
+    }
+
+    .experience-details:nth-child(2n) {
+        position: relative;
+        left: 5%;
+    }
+
+    .exp-container {
+        width: 230%;
+    }
+
+    .work-names {
+        left: 10.5vw;
+    }
+
+    .exp-logo>img {
+        transform: translateY(-46px);
+    }
+
+    #education .work-names {
+        left: 33.5vw;
+        top: -19vh;
+    }
+
+    #education .work-description {
+        transform: translateY(-45px);
+    }
+
+    #contact #main-content {
+        flex-direction: column;
+    }
+
+    .design {
+        width: 74vw;
+    }
+
+    input[type="submit"] {
+        left: 67%;
+    }
+
+    #get-in-touch {
+        width: 79%;
+        left: 11%;
+        margin-top: 130px;
+    }
+}
+
+/* When the screen is lesser than equal to 572px */
+@media screen and (max-width:572px) {
+    .timeline-divider {
+        left: -10%;
+    }
+
+    .experience-details:nth-child(2n+1)::after {
+        left: -55%;
+    }
+
+    .experience-details:nth-child(2n)::after {
+        right: 145%;
+    }
+
+    .experience-details:nth-child(2n+1) {
+        position: relative;
+        left: 5%;
+    }
+
+    .experience-details:nth-child(2n) {
+        position: relative;
+        left: 5%;
+    }
+
+    .exp-container {
+        width: 230%;
+    }
+
+    .work-names {
+        left: 28.5vw;
+        transform: translateY(-54px);
+    }
+
+    .work-description {
+        margin-top: -127px;
+        margin-left: -46px;
+    }
+
+    .exp-logo>img {
+        transform: translate(-50px, -53px);
+    }
+
+    #education .work-names {
+        left: 27.5vw;
+        top: -10vh;
+    }
+
+    #education .work-description {
+        transform: translateY(45px);
+    }
+
+    input[type="submit"] {
+        left: 56%;
+        width: 64%;
+        font-size: 15px;
+    }
+
+    #body-header nav .horizontal-list {
+        visibility: hidden;
+    }
+
+    .hamburger-icon {
+        position: relative;
+        left: 62%;
+        margin-top: -38px;
+        color: white;
+        display: inline-block;
+        visibility: visible;
+    }
+    .hamburger-logo:hover .dropdown-list{
+        visibility: visible;
+    }
+    .hamburger-logo:hover .dropdown-list li{
+        background-color: #828470;
+        box-shadow: 0px 4px 8px 1px #535547;
+    }
+}
